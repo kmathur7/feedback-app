@@ -1,0 +1,15 @@
+{
+  "name": "feedback-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kunal Mathur",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "express": "^4.14.1"
+  }
+}
