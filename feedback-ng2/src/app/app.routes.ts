@@ -7,7 +7,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ResponseComponent } from './response/response.component';
 import { ResultsComponent } from './results/results.component';
 
-
+// mapping path to a component
 const APP_ROUTES: Routes = [
     {path: 'change', component: AddModifyQuestionsComponent},
     {path: 'results', component: ResultsComponent},
