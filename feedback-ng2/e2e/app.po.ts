@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class FeedbackNg2Page {
+export class Project1Page {
   navigateTo() {
     return browser.get('/');
   }

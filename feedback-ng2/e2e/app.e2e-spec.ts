@@ -1,10 +1,10 @@
-import { FeedbackNg2Page } from './app.po';
+import { Project1Page } from './app.po';
 
-describe('feedback-ng2 App', function() {
-  let page: FeedbackNg2Page;
+describe('project1 App', () => {
+  let page: Project1Page;
 
   beforeEach(() => {
-    page = new FeedbackNg2Page();
+    page = new Project1Page();
   });
 
   it('should display message saying app works', () => {

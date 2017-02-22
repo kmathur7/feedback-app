@@ -16,4 +16,4 @@ const APP_ROUTES: Routes = [
     {path: '', component: RegistrationComponent}
 ];
 
-export const routing = RouterModule.forRoot(APP_ROUTES);
+export const Routing = RouterModule.forRoot(APP_ROUTES);

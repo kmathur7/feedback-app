@@ -5,6 +5,10 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
+// importing the router
+import { Routing } from './app.routes';
+
+//importing all components 
 import { AppComponent } from './app.component';
 import { ResultsComponent } from './results/results.component';
 import { RegistrationComponent } from './registration/registration.component';
@@ -25,7 +29,8 @@ import { AddModifyQuestionsComponent } from './add-modify-questions/add-modify-q
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    Routing
   ],
   providers: [],
   bootstrap: [AppComponent]
