@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../common/user.service';
+import { UserModel } from '../common/user-model';
 
 @Component({
   selector: 'app-response',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./response.component.css']
 })
 export class ResponseComponent implements OnInit {
-
-  constructor() { }
+  user: UserModel;
+  constructor(private userservice: UserService) { }
 
   ngOnInit() {
+    this.user = this.userservice.getUser();
   }
+  
 
 }

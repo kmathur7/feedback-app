@@ -1,3 +1,15 @@
-<p>
-  registration works!
-</p>
+<form novalidate [formGroup]="registerForm">
+  <md-input-container>
+    <input type="text" mdInput placeholder="First Name" formControlName="firstname">
+  </md-input-container>
+  <md-input-container>
+    <input type="text" mdInput placeholder="Last Name" formControlName="lastname">
+  </md-input-container>
+  <md-input-container>
+    <input type="email" mdInput placeholder="Email ID" formControlName="email">
+  </md-input-container>
+  <md-input-container>
+    <input type="number" mdInput placeholder="EmpID" formControlName="empid">
+  </md-input-container>
+  <button md-raised-button (click)="fncall()">Submit</button>
+</form>

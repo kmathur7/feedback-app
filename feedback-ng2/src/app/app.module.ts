@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
@@ -16,6 +16,7 @@ import { QuestionDisplayComponent } from './question-display/question-display.co
 import { ResponseComponent } from './response/response.component';
 import { AddModifyQuestionsComponent } from './add-modify-questions/add-modify-questions.component';
 
+import { UserService } from './common/user.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +28,12 @@ import { AddModifyQuestionsComponent } from './add-modify-questions/add-modify-q
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     MaterialModule,
     Routing
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
